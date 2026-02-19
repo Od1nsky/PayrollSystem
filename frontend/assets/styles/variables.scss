@@ -1,0 +1,104 @@
+// Цвета для светлой темы
+$primary-light: #3B82F6;
+$primary-dark: #2563EB;
+$secondary-light: #6B7280;
+$secondary-dark: #9CA3AF;
+$success-light: #10B981;
+$success-dark: #059669;
+$warning-light: #F59E0B;
+$warning-dark: #D97706;
+$danger-light: #EF4444;
+$danger-dark: #DC2626;
+
+$background-light: #FFFFFF;
+$background-secondary-light: #F9FAFB;
+$text-light: #111827;
+$text-secondary-light: #6B7280;
+$border-light: #E5E7EB;
+
+// Цвета для темной темы
+$background-dark: #1F2937;
+$background-secondary-dark: #111827;
+$text-dark: #F9FAFB;
+$text-secondary-dark: #D1D5DB;
+$border-dark: #374151;
+
+// CSS переменные для тем
+:root {
+  --primary: #{$primary-light};
+  --primary-dark: #{$primary-dark};
+  --secondary: #{$secondary-light};
+  --secondary-dark: #{$secondary-dark};
+  --success: #{$success-light};
+  --success-dark: #{$success-dark};
+  --warning: #{$warning-light};
+  --warning-dark: #{$warning-dark};
+  --danger: #{$danger-light};
+  --danger-dark: #{$danger-dark};
+
+  --background: #{$background-light};
+  --background-secondary: #{$background-secondary-light};
+  --text: #{$text-light};
+  --text-secondary: #{$text-secondary-light};
+  --border: #{$border-light};
+}
+
+[data-theme="dark"] {
+  --primary: #{$primary-dark};
+  --secondary: #{$secondary-dark};
+  --success: #{$success-dark};
+  --warning: #{$warning-dark};
+  --danger: #{$danger-dark};
+
+  --background: #{$background-dark};
+  --background-secondary: #{$background-secondary-dark};
+  --text: #{$text-dark};
+  --text-secondary: #{$text-secondary-dark};
+  --border: #{$border-dark};
+}
+
+// Размеры
+$spacing-xs: 0.25rem;   // 4px
+$spacing-sm: 0.5rem;    // 8px
+$spacing-md: 1rem;      // 16px
+$spacing-lg: 1.5rem;    // 24px
+$spacing-xl: 2rem;      // 32px
+$spacing-2xl: 3rem;     // 48px
+
+// Breakpoints
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1280px;
+
+// Типографика
+$font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-size-xs: 0.75rem;   // 12px
+$font-size-sm: 0.875rem;  // 14px
+$font-size-base: 1rem;    // 16px
+$font-size-lg: 1.125rem;  // 18px
+$font-size-xl: 1.25rem;   // 20px
+$font-size-2xl: 1.5rem;   // 24px
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Тени
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+// Радиусы
+$radius-sm: 0.25rem;   // 4px
+$radius-md: 0.5rem;    // 8px
+$radius-lg: 0.75rem;  // 12px
+$radius-xl: 1rem;     // 16px
+$radius-full: 9999px;
+
+// Переходы
+$transition-fast: 150ms;
+$transition-base: 200ms;
+$transition-slow: 300ms;

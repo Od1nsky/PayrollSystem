@@ -1,0 +1,27 @@
+// Тема по умолчанию - светлая
+body {
+  color-scheme: light;
+}
+
+// Темная тема
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+// Автоматическое определение темы системы
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme]) {
+    color-scheme: dark;
+    --primary: #{$primary-dark};
+    --secondary: #{$secondary-dark};
+    --success: #{$success-dark};
+    --warning: #{$warning-dark};
+    --danger: #{$danger-dark};
+
+    --background: #{$background-dark};
+    --background-secondary: #{$background-secondary-dark};
+    --text: #{$text-dark};
+    --text-secondary: #{$text-secondary-dark};
+    --border: #{$border-dark};
+  }
+}
